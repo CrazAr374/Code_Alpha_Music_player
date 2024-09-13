@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="player-header">
+                <h1>Awesome Music Player</h1>
+            </div>
+            <div class="visualizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="album-cover">
+                <img id="albumArt" src="https://via.placeholder.com/300" alt="Album Cover">
+            </div>
+            <div class="song-info">
+                <h2 id="songTitle">Song Title</h2>
+                <p id="artistName">Artist Name</p>
+            </div>
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <div class="time-info">
+                <span id="currentTime">0:00</span>
+                <span id="totalTime">0:00</span>
+            </div>
+            <div class="controls">
+                <button id="prevBtn"><i class="fas fa-step-backward"></i></button>
+                <button id="playPauseBtn"><i class="fas fa-play"></i></button>
+                <button id="nextBtn"><i class="fas fa-step-forward"></i></button>
+                <button id="shuffleBtn"><i class="fas fa-random"></i></button>
+                <button id="repeatBtn"><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="volume-control">
+                <i class="fas fa-volume-down"></i>
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="playlist">
+                <h3>Playlist</h3>
+                <ul id="playlistItems">
+                    <!-- Playlist items will be added dynamically -->
+                </ul>
+            </div>
+        </div>
+        <footer class="glow">
+            <p>Made by Atharva Rahate</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/your-github-profile" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
